@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.samuel.pitscoutingapplication2016">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Pit_Scouting_GUI"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NextPage"
+            android:label="@string/title_activity_next_page"
+            android:parentActivityName=".Pit_Scouting_GUI"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.samuel.pitscoutingapplication2016.Pit_Scouting_GUI" />
+        </activity>
+        <activity
+            android:name=".LastPage"
+            android:label="@string/title_activity_last_page"
+            android:parentActivityName=".NextPage"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.samuel.pitscoutingapplication2016.NextPage" />
+        </activity>
+    </application>
+
+</manifest>
