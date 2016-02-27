@@ -13,10 +13,12 @@ public class PitData {
     public String Position;
     public String AutoStrategy;
     public String Faults1;
+    public String Notes1;
 
     public String Organization;
     public String CoOpInTeam;
     public String CoOpBtTeam;
     public String Problems;
     public String Faults2;
+    public String Notes2;
 }

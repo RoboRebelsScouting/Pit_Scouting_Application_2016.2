@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".NextPage"
+            android:name=".Robot_Information"
             android:label="@string/title_activity_next_page"
             android:parentActivityName=".Pit_Scouting_GUI"
             android:theme="@style/AppTheme.NoActionBar">
@@ -30,13 +30,13 @@
                 android:value="com.example.samuel.pitscoutingapplication2016.Pit_Scouting_GUI" />
         </activity>
         <activity
-            android:name=".LastPage"
+            android:name=".Team_Information"
             android:label="@string/title_activity_last_page"
-            android:parentActivityName=".NextPage"
+            android:parentActivityName=".Robot_Information"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.samuel.pitscoutingapplication2016.NextPage" />
+                android:value=".Robot_Information" />
         </activity>
     </application>
 

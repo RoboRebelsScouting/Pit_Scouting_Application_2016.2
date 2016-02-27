@@ -18,9 +18,16 @@
         <item>None</item>
     </string-array>
     <string-array name="desiredposition_array">
-        <item>Spy</item>
-        <item>Defense</item>
-        <item>Courtyard</item>
+        <item>Opponents Field</item>
+        <item>Neutral-Cheval de Frise</item>
+        <item>Neutral-Rock Wall</item>
+        <item>Neutral-Low Bar</item>
+        <item>Neutral-Rough Terrain</item>
+        <item>Neutral-Porticullis</item>
+        <item>Neutral-Sally Port</item>
+        <item>Neutral-Drawbridge</item>
+        <item>Neutral-Moat</item>
+        <item>Neutral-Ramparts</item>
     </string-array>
     <string-array name="quality_array">
         <item>Perfect</item>

@@ -28,6 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/ScoutName"
+            android:inputType= "textPersonName"
             android:layout_column="1" />
     </TableRow>
 
@@ -75,6 +76,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/EventName"
+            android:inputType= "textPersonName"
             android:layout_column="1" />
     </TableRow>
 
@@ -106,6 +108,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/TeamNumber"
+            android:inputType= "number"
             android:layout_column="1" />
     </TableRow>
 

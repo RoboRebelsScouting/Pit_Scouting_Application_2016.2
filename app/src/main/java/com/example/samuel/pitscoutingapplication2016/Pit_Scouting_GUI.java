@@ -26,7 +26,7 @@ public class Pit_Scouting_GUI extends AppCompatActivity {
         String teamString = teamEdit.getText().toString();
         PitScout.botPitData.Team = teamString;
 
-        Intent intent = new Intent(this, NextPage.class);
+        Intent intent = new Intent(this, Robot_Information.class);
         startActivity(intent);
     }
 
