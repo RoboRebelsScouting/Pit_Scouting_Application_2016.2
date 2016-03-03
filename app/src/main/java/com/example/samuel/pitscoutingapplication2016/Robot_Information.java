@@ -45,7 +45,7 @@ public class Robot_Information extends AppCompatActivity {
         } else {
             focus2String = "false";
         }
-        PitScout.botPitData.Focus = focus2String;
+        PitScout.botPitData.Focus1 = focus2String;
 
         CheckBox focus3Edit = (CheckBox) findViewById(R.id.checkBox3);
         String focus3String = null;
@@ -54,7 +54,7 @@ public class Robot_Information extends AppCompatActivity {
         } else {
             focus3String = "false";
         }
-        PitScout.botPitData.Focus = focus3String;
+        PitScout.botPitData.Focus2 = focus3String;
 
         CheckBox focus4Edit = (CheckBox) findViewById(R.id.checkBox4);
         String focus4String = null;
@@ -63,7 +63,7 @@ public class Robot_Information extends AppCompatActivity {
         } else {
             focus4String = "false";
         }
-        PitScout.botPitData.Focus = focus4String;
+        PitScout.botPitData.Focus3 = focus4String;
 
         CheckBox focus5Edit = (CheckBox) findViewById(R.id.checkBox5);
         String focus5String = null;
@@ -72,7 +72,7 @@ public class Robot_Information extends AppCompatActivity {
         } else {
             focus5String = "false";
         }
-        PitScout.botPitData.Focus = focus5String;
+        PitScout.botPitData.Focus4 = focus5String;
 
         //Checkboxes for Defenses Desired to Cross
         CheckBox focus6Edit = (CheckBox) findViewById(R.id.checkBox6);
@@ -82,7 +82,7 @@ public class Robot_Information extends AppCompatActivity {
         } else {
             focus6String = "false";
         }
-        PitScout.botPitData.Defense = focus6String;
+        PitScout.botPitData.Defense1 = focus6String;
 
         CheckBox focus7Edit = (CheckBox) findViewById(R.id.checkBox7);
         String focus7String = null;
@@ -91,7 +91,7 @@ public class Robot_Information extends AppCompatActivity {
         } else {
             focus7String = "false";
         }
-        PitScout.botPitData.Defense = focus7String;
+        PitScout.botPitData.Defense2 = focus7String;
 
         CheckBox focus8Edit = (CheckBox) findViewById(R.id.checkBox8);
         String focus8String = null;
@@ -100,7 +100,7 @@ public class Robot_Information extends AppCompatActivity {
         } else {
             focus8String = "false";
         }
-        PitScout.botPitData.Defense = focus8String;
+        PitScout.botPitData.Defense3 = focus8String;
 
         CheckBox focus9Edit = (CheckBox) findViewById(R.id.checkBox9);
         String focus9String = null;
@@ -109,7 +109,7 @@ public class Robot_Information extends AppCompatActivity {
         } else {
             focus9String = "false";
         }
-        PitScout.botPitData.Defense = focus9String;
+        PitScout.botPitData.Defense4 = focus9String;
 
         CheckBox focus10Edit = (CheckBox) findViewById(R.id.checkBox10);
         String focus10String = null;
@@ -118,7 +118,7 @@ public class Robot_Information extends AppCompatActivity {
         } else {
             focus10String = "false";
         }
-        PitScout.botPitData.Defense = focus10String;
+        PitScout.botPitData.Defense5 = focus10String;
 
         CheckBox focus11Edit = (CheckBox) findViewById(R.id.checkBox11);
         String focus11String = null;
@@ -127,7 +127,7 @@ public class Robot_Information extends AppCompatActivity {
         } else {
             focus11String = "false";
         }
-        PitScout.botPitData.Defense = focus11String;
+        PitScout.botPitData.Defense6 = focus11String;
 
         CheckBox focus12Edit = (CheckBox) findViewById(R.id.checkBox12);
         String focus12String = null;
@@ -136,7 +136,7 @@ public class Robot_Information extends AppCompatActivity {
         } else {
             focus12String = "false";
         }
-        PitScout.botPitData.Defense = focus12String;
+        PitScout.botPitData.Defense7 = focus12String;
 
         CheckBox focus13Edit = (CheckBox) findViewById(R.id.checkBox13);
         String focus13String = null;
@@ -145,7 +145,7 @@ public class Robot_Information extends AppCompatActivity {
         } else {
             focus13String = "false";
         }
-        PitScout.botPitData.Defense = focus13String;
+        PitScout.botPitData.Defense8 = focus13String;
 
         CheckBox focus14Edit = (CheckBox) findViewById(R.id.checkBox14);
         String focus14String = null;
@@ -154,7 +154,7 @@ public class Robot_Information extends AppCompatActivity {
         } else {
             focus14String = "false";
         }
-        PitScout.botPitData.Defense = focus14String;
+        PitScout.botPitData.Defense9 = focus14String;
 
         //Autonomous Strategy
         CheckBox focus15Edit = (CheckBox) findViewById(R.id.checkBox15);
@@ -164,7 +164,7 @@ public class Robot_Information extends AppCompatActivity {
         } else {
             focus15String = "false";
         }
-        PitScout.botPitData.AutoStrategy = focus15String;
+        PitScout.botPitData.AutoStrategy1 = focus15String;
 
         CheckBox focus16Edit = (CheckBox) findViewById(R.id.checkBox16);
         String focus16String = null;
@@ -173,7 +173,7 @@ public class Robot_Information extends AppCompatActivity {
         } else {
             focus16String = "false";
         }
-        PitScout.botPitData.AutoStrategy = focus16String;
+        PitScout.botPitData.AutoStrategy2 = focus16String;
 
         CheckBox focus17Edit = (CheckBox) findViewById(R.id.checkBox17);
         String focus17String = null;
@@ -182,7 +182,7 @@ public class Robot_Information extends AppCompatActivity {
         } else {
             focus17String = "false";
         }
-        PitScout.botPitData.AutoStrategy = focus17String;
+        PitScout.botPitData.AutoStrategy3 = focus17String;
 
         CheckBox focus18Edit = (CheckBox) findViewById(R.id.checkBox18);
         String focus18String = null;
@@ -191,7 +191,7 @@ public class Robot_Information extends AppCompatActivity {
         } else {
             focus18String = "false";
         }
-        PitScout.botPitData.AutoStrategy = focus18String;
+        PitScout.botPitData.AutoStrategy4 = focus18String;
 
         CheckBox focus19Edit = (CheckBox) findViewById(R.id.checkBox19);
         String focus19String = null;
@@ -200,7 +200,7 @@ public class Robot_Information extends AppCompatActivity {
         } else {
             focus19String = "false";
         }
-        PitScout.botPitData.AutoStrategy = focus19String;
+        PitScout.botPitData.AutoStrategy5 = focus19String;
 
         CheckBox focus20Edit = (CheckBox) findViewById(R.id.checkBox20);
         String focus20String = null;
@@ -209,7 +209,7 @@ public class Robot_Information extends AppCompatActivity {
         } else {
             focus20String = "false";
         }
-        PitScout.botPitData.AutoStrategy = focus20String;
+        PitScout.botPitData.AutoStrategy6 = focus20String;
 
         //Back to norma|
 

@@ -1,5 +1,6 @@
 package com.example.samuel.pitscoutingapplication2016;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.design.widget.FloatingActionButton;
@@ -116,9 +117,26 @@ public class Team_Information extends AppCompatActivity {
                     PitScout.botPitData.DriveTrainType + ","+
                     PitScout.botPitData.Climbing + ","
                     + PitScout.botPitData.ShootingStrategy + ","
-                    + PitScout.botPitData.Focus + ","
-                    + PitScout.botPitData.Defense + ","
-                    + PitScout.botPitData.AutoStrategy + ","
+                    + PitScout.botPitData.Focus1 + ","
+                    + PitScout.botPitData.Focus2 + ","
+                    + PitScout.botPitData.Focus3 + ","
+                    + PitScout.botPitData.Focus4 + ","
+                    + PitScout.botPitData.Defense1 + ","
+                    + PitScout.botPitData.Defense2 + ","
+                    + PitScout.botPitData.Defense3 + ","
+                    + PitScout.botPitData.Defense4 + ","
+                    + PitScout.botPitData.Defense5 + ","
+                    + PitScout.botPitData.Defense6 + ","
+                    + PitScout.botPitData.Defense7 + ","
+                    + PitScout.botPitData.Defense8 + ","
+                    + PitScout.botPitData.Defense9 + ","
+                    + PitScout.botPitData.Position + ","
+                    + PitScout.botPitData.AutoStrategy1 + ","
+                    + PitScout.botPitData.AutoStrategy2 + ","
+                    + PitScout.botPitData.AutoStrategy3 + ","
+                    + PitScout.botPitData.AutoStrategy4 + ","
+                    + PitScout.botPitData.AutoStrategy5 + ","
+                    + PitScout.botPitData.AutoStrategy6 + ","
                     + PitScout.botPitData.Faults1 + ","
                     + PitScout.botPitData.Notes1 + ","
 
@@ -133,6 +151,12 @@ public class Team_Information extends AppCompatActivity {
         } catch (IOException e) {
             Log.e("ERROR", "File NOT Created", e);
         }
+
+        Intent intent = new Intent(this, Pit_Scouting_GUI.class);
+        String Scout = PitScout.botPitData.Scout;
+        PitScout.botPitData.clear();
+        PitScout.botPitData.Scout = Scout;
+        startActivity(intent);
     }
 
 }

@@ -45,6 +45,12 @@ public class Pit_Scouting_GUI extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        if (!PitScout.botPitData.Scout.equals("")){
+            EditText scoutTxt = (EditText) findViewById(R.id.ScoutName);
+            scoutTxt.setHint(PitScout.botPitData.Scout);
+        }
+
     }
 
     @Override
