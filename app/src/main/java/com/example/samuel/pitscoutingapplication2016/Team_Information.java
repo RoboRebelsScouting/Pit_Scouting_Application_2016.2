@@ -98,10 +98,20 @@ public class Team_Information extends AppCompatActivity {
 
         EditText faults2Edit = (EditText) findViewById(R.id.Faults2Text);
         String faults2String = faults2Edit.getText().toString();
+
+        // don't allow faults to be empty
+        if (faults2String.equals("")) {
+            faults2String = "no faults noted";
+        }
         PitScout.botPitData.Faults2 = faults2String;
 
         EditText notes2Edit = (EditText) findViewById(R.id.Notes2);
         String notes2String = notes2Edit.getText().toString();
+
+        // don't allow notes2String to be empty
+        if (notes2String.equals("")) {
+            notes2String = "no notes";
+        }
         PitScout.botPitData.Notes2 = notes2String;
 
 
@@ -154,22 +164,18 @@ public class Team_Information extends AppCompatActivity {
             intent.setAction(Intent.ACTION_SEND);
             intent.setType("text/plain");
             intent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(file));
-            ERR.startActivityForResult(intent, 0);
+            this.startActivityForResult(intent, 0);
 
         } catch (IOException e) {
             Log.e("ERROR", "File NOT Created", e);
         }
-
-        Intent intent = new Intent(this, Pit_Scouting_GUI.class);
-        String Scout = PitScout.botPitData.Scout;
-        PitScout.botPitData.clear();
-        PitScout.botPitData.Scout = Scout;
-        startActivity(intent);
     }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         Intent intent = new Intent(this, Pit_Scouting_GUI.class);
-        ERR///////////////////Put the stuff you do before start a new activity here:////////////////////
+        String Scout = PitScout.botPitData.Scout;
+        PitScout.botPitData.clear();
+        PitScout.botPitData.Scout = Scout;
         startActivity(intent);
     }
 }

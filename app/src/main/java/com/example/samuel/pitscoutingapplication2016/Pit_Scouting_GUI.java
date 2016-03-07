@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class Pit_Scouting_GUI extends AppCompatActivity {
 
@@ -26,8 +27,26 @@ public class Pit_Scouting_GUI extends AppCompatActivity {
         String teamString = teamEdit.getText().toString();
         PitScout.botPitData.Team = teamString;
 
-        Intent intent = new Intent(this, Robot_Information.class);
-        startActivity(intent);
+        // check that all data has been entered
+        Boolean allDataIn = true;
+        if (scoutString.equals("")) {
+            Toast.makeText(getApplicationContext(), "Type Your Name In", Toast.LENGTH_LONG).show();
+            allDataIn = false;
+        }
+        if (eventString.equals("")) {
+            Toast.makeText(getApplicationContext(), "Type Your Event In", Toast.LENGTH_LONG).show();
+            allDataIn = false;
+        }
+        if (teamString.equals("")) {
+            Toast.makeText(getApplicationContext(), "Type Your Team Number In", Toast.LENGTH_LONG).show();
+            allDataIn = false;
+        }
+
+        if (allDataIn) {
+            Intent intent = new Intent(this, Robot_Information.class);
+            startActivity(intent);
+        }
+
     }
 
     @Override
