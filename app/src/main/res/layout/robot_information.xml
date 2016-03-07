@@ -25,7 +25,7 @@
             android:layout_column="1" />
 
         <Spinner
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:id="@+id/drivetrain_spinner"
             android:layout_column="2" />
@@ -88,7 +88,7 @@
             android:layout_column="1" />
 
         <Spinner
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:id="@+id/shootingstrategy_spinner"
             android:layout_column="2" />
@@ -288,7 +288,7 @@
             android:layout_column="1" />
 
         <Spinner
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:id="@+id/desiredposition_spinner"
             android:layout_column="2" />

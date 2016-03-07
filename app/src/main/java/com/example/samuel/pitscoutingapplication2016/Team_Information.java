@@ -1,6 +1,7 @@
 package com.example.samuel.pitscoutingapplication2016;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.design.widget.FloatingActionButton;
@@ -148,6 +149,13 @@ public class Team_Information extends AppCompatActivity {
                     + PitScout.botPitData.Notes2 ;
             writer.write(lineOne + "\n");
             writer.close();
+
+            Intent intent = new Intent();
+            intent.setAction(Intent.ACTION_SEND);
+            intent.setType("text/plain");
+            intent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(file));
+            ERR.startActivityForResult(intent, 0);
+
         } catch (IOException e) {
             Log.e("ERROR", "File NOT Created", e);
         }
@@ -158,5 +166,10 @@ public class Team_Information extends AppCompatActivity {
         PitScout.botPitData.Scout = Scout;
         startActivity(intent);
     }
-
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        Intent intent = new Intent(this, Pit_Scouting_GUI.class);
+        ERR///////////////////Put the stuff you do before start a new activity here:////////////////////
+        startActivity(intent);
+    }
 }
