@@ -32,15 +32,16 @@ System.out.printIn(replaced);
     public String AutoStrategy4;
     public String AutoStrategy5;
     public String AutoStrategy6;
-    public String Faults1;
-    public String Notes1;
+    public String Notes;
 
     public String Organization;
     public String CoOpInTeam;
     public String CoOpBtTeam;
     public String Problems;
-    public String Faults2;
-    public String Notes2;
+
+    public boolean[] brokenParts;
+    public boolean[] structureFlaws;
+    public String reliability;
 
     public void clear() {
         this.Scout = "";
@@ -70,14 +71,14 @@ System.out.printIn(replaced);
         this.AutoStrategy4 = "";
         this.AutoStrategy5 = "";
         this.AutoStrategy6 = "";
-        this.Faults1 = "";
-        this.Notes1 = "";
+        this.Notes = "";
         this.Organization = "";
         this.CoOpInTeam = "";
         this.CoOpBtTeam = "";
         this.Problems = "";
-        this.Faults2 = "";
-        this.Notes2 = "";
+        this.brokenParts = new boolean[5];
+        this.structureFlaws = new boolean[4];
+        this.reliability = "";
     }
 /*Cool code is cool
     | |                        | |

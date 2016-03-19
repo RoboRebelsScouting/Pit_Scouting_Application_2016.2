@@ -9,6 +9,7 @@
         <item>All-Chains</item>
         <item>All-Belts</item>
         <item>All-Motors</item>
+        <item>TankDrive</item>
     </string-array>
     <string-array name="shootingstrategy_array">
         <item>High</item>
@@ -50,4 +51,5 @@
         <item>Rivets</item>
         <item>Nuts</item>
     </string-array>
+    <string name="title_activity_robot_build">RobotBuild</string>
 </resources>

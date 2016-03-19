@@ -33,10 +33,6 @@ public class Robot_Information extends AppCompatActivity {
         String shootingString = shootingEdit.getSelectedItem().toString();
         PitScout.botPitData.ShootingStrategy = shootingString;
 
-        EditText notes1Edit = (EditText) findViewById(R.id.Notes1);
-        String notes1String = notes1Edit.getText().toString();
-        PitScout.botPitData.Notes1 = notes1String;
-
         //Checkboxes for Area of Focus
         CheckBox focus2Edit = (CheckBox) findViewById(R.id.checkBox2);
         String focus2String = null;
@@ -216,11 +212,6 @@ public class Robot_Information extends AppCompatActivity {
         Spinner positionEdit = (Spinner) findViewById(R.id.desiredposition_spinner);
         String positionString = drivetrainEdit.getSelectedItem().toString();
         PitScout.botPitData.Position = positionString;
-
-        EditText faults1Edit = (EditText) findViewById(R.id.Faults1Text);
-        String faults1String = faults1Edit.getText().toString();
-        PitScout.botPitData.Faults1 = faults1String;
-
 
         Intent intent = new Intent(this, Team_Information.class);
         startActivity(intent);

@@ -17,16 +17,16 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Drive Train Type"
-            android:id="@+id/textView6"
+            android:id="@+id/drivetrainText"
             android:layout_column="1" />
 
         <Spinner
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
             android:id="@+id/drivetrain_spinner"
             android:layout_column="2" />
     </TableRow>
@@ -393,10 +393,6 @@
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></TableRow>
-
-    <TableRow
-        android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <Button
@@ -408,44 +404,4 @@
             android:layout_column="2" />
     </TableRow>
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Suspected Faults"
-            android:id="@+id/textView20"
-            android:layout_column="1" />
-
-        <EditText
-            android:layout_width="6dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/Faults1Text"
-            android:inputType= "textPersonName"
-            android:layout_column="2" />
-    </TableRow>
-
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="                          Notes"
-            android:id="@+id/textView23"
-            android:layout_column="1" />
-
-        <EditText
-            android:layout_width="6dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/Notes1"
-            android:inputType= "textPersonName"
-            android:layout_column="2" />
-
-    </TableRow>
 </TableLayout>

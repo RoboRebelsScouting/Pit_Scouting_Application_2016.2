@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.samuel.pitscoutingapplication2016.RobotBuild"
+    tools:showIn="@layout/activity_robot_build">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Broken Parts"
+            android:id="@+id/brokenPartText"
+            android:layout_column="1" />
+
+        <CheckBox
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="Climber"
+            android:id="@+id/climberBroke"
+            android:layout_column="2" />
+        <CheckBox
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="Drive Train"
+            android:id="@+id/drivetrainBroke"
+            android:layout_column="3" />
+        <CheckBox
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="Collector"
+            android:id="@+id/collectorBroke"
+            android:layout_column="4" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <CheckBox
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:text="Wheel"
+            android:id="@+id/wheelBroke"
+            android:layout_column="2" />
+
+        <CheckBox
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="Frame"
+            android:id="@+id/frameBroke"
+            android:layout_column="3" />
+
+        <CheckBox
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="Shooter"
+            android:id="@+id/shooterBroke"
+            android:layout_column="4" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text=""
+            android:id="@+id/spacer1"
+            android:layout_column="1" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:textSize="20sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Structure Design"
+            android:id="@+id/structure"
+            android:layout_column="1" />
+
+        <CheckBox
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="Aluminum Frame/Gears"
+            android:id="@+id/aluminumFlaw"
+            android:layout_column="2" />
+
+        <CheckBox
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="Direct Drive"
+            android:id="@+id/directDriveFlaw"
+            android:layout_column="3" />
+
+        <CheckBox
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:text="No suspension/Tire Construction"
+            android:id="@+id/suspensionFlaw"
+            android:layout_column="4" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <CheckBox
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:text="Rivets in Frame/Drive Train/Suspension"
+            android:id="@+id/rivetsFlaw"
+            android:layout_column="2" />
+
+        <CheckBox
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Little/No Battery Attachment"
+            android:id="@+id/batteryFlaw"
+            android:layout_column="3" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text=""
+            android:id="@+id/spacer2"
+            android:layout_column="1" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Need Help?"
+            android:id="@+id/reliability"
+            android:layout_column="1" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:hint="What needs help?"
+            android:id="@+id/reliabilityEditText"
+            android:layout_column="2" />
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Notes"
+            android:id="@+id/notes"
+            android:layout_column="1" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:hint="Notes"
+            android:id="@+id/notesEditText"
+            android:layout_column="2" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text=""
+            android:id="@+id/spacer3"
+            android:layout_column="1" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Save"
+            android:onClick="CreateCSV"
+            android:id="@+id/saveCSV"
+            android:layout_column="1" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Submit"
+            android:onClick="SendCSV"
+            android:id="@+id/sendCSV"
+            android:layout_column="2" />
+    </TableRow>
+</TableLayout>
