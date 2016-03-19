@@ -4,6 +4,10 @@ public class PitData {
     public String Scout="";
     public String Event;
     public String Team;
+/*
+String replaced = sentence.replace("and", "");
+System.out.printIn(replaced);
+*/
 
     public String DriveTrainType;
     public String Climbing;

@@ -28,6 +28,7 @@
         <item>Neutral-Drawbridge</item>
         <item>Neutral-Moat</item>
         <item>Neutral-Ramparts</item>
+        <item>Any</item>
     </string-array>
     <string-array name="quality_array">
         <item>Perfect</item>
@@ -39,5 +40,14 @@
         <item>Not Applicable</item>
         <item>Yes</item>
         <item>No</item>
+    </string-array>
+
+    <string name="title_activity_robot_expectations">Robot Expectations</string>
+    <string-array name="composition_array">
+        <item>Tape</item>
+        <item>Velcro</item>
+        <item>Welding</item>
+        <item>Rivets</item>
+        <item>Nuts</item>
     </string-array>
 </resources>

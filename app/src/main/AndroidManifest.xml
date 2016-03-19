@@ -38,6 +38,21 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Robot_Information" />
         </activity>
+        <activity
+            android:name=".RobotExpectations"
+            android:label="@string/title_activity_robot_expectations"
+            android:parentActivityName=".Robot_Information"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.samuel.pitscoutingapplication2016.Robot_Information" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

@@ -78,7 +78,16 @@ public class Team_Information extends AppCompatActivity {
         return file;
     }
 
-    public void CreateCSV (View view) {
+    public void SendCSV (View view) {
+        File file = CreateCSV (view);
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        intent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(file));
+        this.startActivityForResult(intent, 0);
+    }
+
+    public File CreateCSV (View view) {
 
         Spinner organizationEdit = (Spinner) findViewById(R.id.organization_spinner);
         String organizationString = organizationEdit.getSelectedItem().toString();
@@ -121,6 +130,56 @@ public class Team_Information extends AppCompatActivity {
         try {
             FileWriter writer = new FileWriter(file);
 
+            //remove commas from any text strings
+            String newString = PitScout.botPitData.Scout.replace(",", ";");
+            PitScout.botPitData.Scout = newString;
+            System.out.println(PitScout.botPitData.Scout);
+
+            String newString1 = PitScout.botPitData.Event.replace(",", ";");
+            PitScout.botPitData.Event = newString1;
+            System.out.println(PitScout.botPitData.Event);
+
+            String newString2 = PitScout.botPitData.Notes1.replace(",", ";");
+            PitScout.botPitData.Notes1 = newString2;
+            System.out.println(PitScout.botPitData.Notes1);
+
+            String newString3 = PitScout.botPitData.Faults1.replace(",", ";");
+            PitScout.botPitData.Faults1 = newString3;
+            System.out.println(PitScout.botPitData.Faults1);
+
+            String newString4 = PitScout.botPitData.Notes2.replace(",", ";");
+            PitScout.botPitData.Notes2 = newString4;
+            System.out.println(PitScout.botPitData.Notes2);
+
+            String newString5 = PitScout.botPitData.Faults2.replace(",", ";");
+            PitScout.botPitData.Faults2 = newString5;
+            System.out.println(PitScout.botPitData.Faults2);
+
+            //replace quotation marks with dashes
+            String newStringq = PitScout.botPitData.Scout.replace("\"", "-");
+            PitScout.botPitData.Scout = newStringq;
+            System.out.println(PitScout.botPitData.Scout);
+
+            String newString1q = PitScout.botPitData.Event.replace("\"", "-");
+            PitScout.botPitData.Event = newString1q;
+            System.out.println(PitScout.botPitData.Event);
+
+            String newString2q = PitScout.botPitData.Notes1.replace("\"", "-");
+            PitScout.botPitData.Notes1 = newString2q;
+            System.out.println(PitScout.botPitData.Notes1);
+
+            String newString3q = PitScout.botPitData.Faults1.replace("\"", "-");
+            PitScout.botPitData.Faults1 = newString3q;
+            System.out.println(PitScout.botPitData.Faults1);
+
+            String newString4q = PitScout.botPitData.Notes2.replace("\"", "-");
+            PitScout.botPitData.Notes2 = newString4q;
+            System.out.println(PitScout.botPitData.Notes2);
+
+            String newString5q = PitScout.botPitData.Faults2.replace("\"", "-");
+            PitScout.botPitData.Faults2 = newString5q;
+            System.out.println(PitScout.botPitData.Faults2);
+
             String lineOne = PitScout.botPitData.Scout + "," +
                     PitScout.botPitData.Event + ","+
                     PitScout.botPitData.Team + ","+
@@ -160,16 +219,14 @@ public class Team_Information extends AppCompatActivity {
             writer.write(lineOne + "\n");
             writer.close();
 
-            Intent intent = new Intent();
-            intent.setAction(Intent.ACTION_SEND);
-            intent.setType("text/plain");
-            intent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(file));
-            this.startActivityForResult(intent, 0);
+            return file;
 
         } catch (IOException e) {
             Log.e("ERROR", "File NOT Created", e);
         }
+        return null;
     }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         Intent intent = new Intent(this, Pit_Scouting_GUI.class);
