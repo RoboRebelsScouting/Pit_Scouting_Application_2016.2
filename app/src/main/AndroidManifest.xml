@@ -40,7 +40,6 @@
         </activity>
         <activity
             android:name=".RobotBuild"
-            android:label="@string/title_activity_robot_expectations"
             android:parentActivityName=".Robot_Information"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -53,10 +52,5 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".RobotBuild"
-            android:label="@string/title_activity_robot_build"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
-
 </manifest>

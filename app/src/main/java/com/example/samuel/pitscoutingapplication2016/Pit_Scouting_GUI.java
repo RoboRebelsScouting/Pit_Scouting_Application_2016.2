@@ -43,8 +43,13 @@ public class Pit_Scouting_GUI extends AppCompatActivity {
         }
 
         if (allDataIn) {
-            Intent intent = new Intent(this, Robot_Information.class);
-            startActivity(intent);
+            if (view == findViewById(R.id.goToPage4)) {
+                Intent intent = new Intent(this, RobotBuild.class);
+                startActivity(intent);
+            } else {
+                Intent intent = new Intent(this, Robot_Information.class);
+                startActivity(intent);
+            }
         }
 
     }

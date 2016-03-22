@@ -70,13 +70,6 @@ public class Team_Information extends AppCompatActivity {
         }
         return false;
     }
-    public static File getAlbumStorageDir(String albumName) {
-        File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS), albumName);
-        if (!file.mkdirs()) {
-            Log.e("ERROR", "Directory NOT Created");
-        }
-        return file;
-    }
 
     public void ToRobotBuild (View view) {
 

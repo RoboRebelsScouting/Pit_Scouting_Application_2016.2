@@ -42,14 +42,4 @@
         <item>Yes</item>
         <item>No</item>
     </string-array>
-
-    <string name="title_activity_robot_expectations">Robot Expectations</string>
-    <string-array name="composition_array">
-        <item>Tape</item>
-        <item>Velcro</item>
-        <item>Welding</item>
-        <item>Rivets</item>
-        <item>Nuts</item>
-    </string-array>
-    <string name="title_activity_robot_build">RobotBuild</string>
 </resources>

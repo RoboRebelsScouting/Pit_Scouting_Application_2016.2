@@ -36,22 +36,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    </TableRow>
-
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"></TableRow>
-
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    </TableRow>
-
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -128,7 +112,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Page 4"
-            android:onClick="ToRobotBuild"
+            android:onClick="NextPage"
             android:id="@+id/goToPage4"
             android:layout_column="1" />
     </TableRow>

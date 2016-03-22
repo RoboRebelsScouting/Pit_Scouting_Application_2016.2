@@ -3,6 +3,7 @@ package com.example.samuel.pitscoutingapplication2016;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -69,12 +70,20 @@ public class RobotBuild extends AppCompatActivity {
         PitScout.botPitData.Notes = ((EditText) findViewById(R.id.notesEditText)).getText().toString();
     }
 
+    public static File getAlbumStorageDir(String albumName) {
+        File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS), albumName);
+        if (!file.mkdirs()) {
+            Log.e("ERROR", "Directory NOT Created");
+        }
+        return file;
+    }
+
     public File CreateCSV (View view) {
         getBrokenStuffInBuildData();
         getFlawedStructureInBuildData();
         getNotes();
-        String fileName = PitScout.botPitData.Event + "-" + PitScout.botPitData.Team + "-" + "pit.csv";
-        File directory = Team_Information.getAlbumStorageDir("/FRC2016");
+        String fileName = PitScout.botPitData.Event + "-" + PitScout.botPitData.Team + "-"+ System.currentTimeMillis() + "-" + "pit.csv";
+        File directory = getAlbumStorageDir("/FRC2016");
         File file = new File(directory, fileName);
         try {
             FileWriter writer = new FileWriter(file);

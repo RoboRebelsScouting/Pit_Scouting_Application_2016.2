@@ -9,39 +9,39 @@ String replaced = sentence.replace("and", "");
 System.out.printIn(replaced);
 */
 
-    public String DriveTrainType;
-    public String Climbing;
-    public String ShootingStrategy;
-    public String Focus1;
-    public String Focus2;
-    public String Focus3;
-    public String Focus4;
-    public String Defense1;
-    public String Defense2;
-    public String Defense3;
-    public String Defense4;
-    public String Defense5;
-    public String Defense6;
-    public String Defense7;
-    public String Defense8;
-    public String Defense9;
-    public String Position;
-    public String AutoStrategy1;
-    public String AutoStrategy2;
-    public String AutoStrategy3;
-    public String AutoStrategy4;
-    public String AutoStrategy5;
-    public String AutoStrategy6;
-    public String Notes;
+    public String DriveTrainType="";
+    public String Climbing="";
+    public String ShootingStrategy="";
+    public String Focus1="";
+    public String Focus2="";
+    public String Focus3="";
+    public String Focus4="";
+    public String Defense1="";
+    public String Defense2="";
+    public String Defense3="";
+    public String Defense4="";
+    public String Defense5="";
+    public String Defense6="";
+    public String Defense7="";
+    public String Defense8="";
+    public String Defense9="";
+    public String Position="";
+    public String AutoStrategy1="";
+    public String AutoStrategy2="";
+    public String AutoStrategy3="";
+    public String AutoStrategy4="";
+    public String AutoStrategy5="";
+    public String AutoStrategy6="";
+    public String Notes="";
 
-    public String Organization;
-    public String CoOpInTeam;
-    public String CoOpBtTeam;
-    public String Problems;
+    public String Organization="";
+    public String CoOpInTeam="";
+    public String CoOpBtTeam="";
+    public String Problems="";
 
-    public boolean[] brokenParts;
-    public boolean[] structureFlaws;
-    public String reliability;
+    public boolean[] brokenParts = new boolean[6];
+    public boolean[] structureFlaws = new boolean[5];
+    public String reliability="";
 
     public void clear() {
         this.Scout = "";
@@ -76,8 +76,8 @@ System.out.printIn(replaced);
         this.CoOpInTeam = "";
         this.CoOpBtTeam = "";
         this.Problems = "";
-        this.brokenParts = new boolean[5];
-        this.structureFlaws = new boolean[4];
+        this.brokenParts = new boolean[6];
+        this.structureFlaws = new boolean[5];
         this.reliability = "";
     }
 /*Cool code is cool
