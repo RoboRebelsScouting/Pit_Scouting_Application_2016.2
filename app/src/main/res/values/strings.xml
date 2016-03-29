@@ -35,7 +35,7 @@
         <item>Perfect</item>
         <item>Good</item>
         <item>Poor</item>
-        <item>Terrible</item>
+        <item>Very Poor</item>
     </string-array>
     <string-array name="problemssolved_array">
         <item>Not Applicable</item>

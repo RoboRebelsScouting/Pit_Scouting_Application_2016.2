@@ -67,7 +67,17 @@ public class RobotBuild extends AppCompatActivity {
     }
 
     public void getNotes() {
-        PitScout.botPitData.Notes = ((EditText) findViewById(R.id.notesEditText)).getText().toString();
+        String notes = ((EditText) findViewById(R.id.notesEditText)).getText().toString();
+        String reliability = ((EditText) findViewById(R.id.reliabilityEditText)).getText().toString();
+
+        reliability.replace(",",";");
+        reliability.replace("\"","-");
+
+        notes.replace(",",";");
+        notes.replace("\"","-");
+
+        PitScout.botPitData.Notes = notes;
+        PitScout.botPitData.reliability = reliability;
     }
 
     public static File getAlbumStorageDir(String albumName) {
@@ -82,7 +92,8 @@ public class RobotBuild extends AppCompatActivity {
         getBrokenStuffInBuildData();
         getFlawedStructureInBuildData();
         getNotes();
-        String fileName = PitScout.botPitData.Event + "-" + PitScout.botPitData.Team + "-"+ System.currentTimeMillis() + "-" + "pit.csv";
+        long time = System.currentTimeMillis();
+        String fileName = PitScout.botPitData.Event + "-" + PitScout.botPitData.Team + "-"+ time + "-" + "pit.csv";
         File directory = getAlbumStorageDir("/FRC2016");
         File file = new File(directory, fileName);
         try {
@@ -133,7 +144,8 @@ public class RobotBuild extends AppCompatActivity {
                     + PitScout.botPitData.structureFlaws[2] + ","
                     + PitScout.botPitData.structureFlaws[3] + ","
                     + PitScout.botPitData.structureFlaws[4] + ","
-                    + PitScout.botPitData.reliability;
+                    + PitScout.botPitData.reliability + ","
+                    + time;
             writer.write(lineOne + "\n");
             writer.close();
 

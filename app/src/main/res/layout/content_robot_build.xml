@@ -170,6 +170,7 @@
         <EditText
             android:layout_width="150dp"
             android:layout_height="60dp"
+            android:inputType= "textPersonName"
             android:hint="What needs help?"
             android:id="@+id/reliabilityEditText"
             android:layout_column="2" />
@@ -186,6 +187,7 @@
         <EditText
             android:layout_width="150dp"
             android:layout_height="60dp"
+            android:inputType= "textPersonName"
             android:hint="Notes"
             android:id="@+id/notesEditText"
             android:layout_column="2" />
